@@ -1,7 +1,7 @@
 write_files:
 - encoding: ""
   content: |-
-    * 2,14 * * * reboot
+    * 1,13 * * * reboot
   owner: root
   path: /etc/crontabs/root
   permissions: '0755'
