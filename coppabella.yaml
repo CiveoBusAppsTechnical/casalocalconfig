@@ -1,0 +1,28 @@
+write_files:
+- encoding: ""
+  content: |-
+    * 1,13 * * * reboot
+  owner: root
+  path: /etc/crontabs/root
+  permissions: '0755'
+hostname: cblk3os01
+run_cmd:
+- "rc-service crond start"
+
+k3os:
+  data_sources:
+  - aws
+  - cdrom
+  modules:
+  - kvm
+  - nvme
+  sysctl:
+    kernel.printk: "4 4 1 7"
+    kernel.kptr_restrict: "1"
+  ntp_servers:
+  - 0.us.pool.ntp.org
+  - 1.us.pool.ntp.org
+  password: P@ssw0rd!@#
+  k3s_args:
+  - server
+  - "--cluster-init"
