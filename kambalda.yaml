@@ -5,7 +5,7 @@ write_files:
   owner: root
   path: /etc/crontabs/root
   permissions: '0755'
-hostname: bogk3os01
+hostname: kamk3os01
 run_cmd:
 - "rc-service crond start"
 
