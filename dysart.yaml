@@ -7,7 +7,7 @@ write_files:
   permissions: '0755'
 hostname: dysk3os01
 run_cmd:
-- "rc-service crond start"
+- "rc-service crond stop"
 
 k3os:
   data_sources:
