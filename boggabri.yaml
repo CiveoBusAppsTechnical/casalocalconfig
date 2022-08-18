@@ -1,13 +1,13 @@
 write_files:
 - encoding: ""
   content: |-
-    0 1,13 * * * reboot
+    0 1,13 * * * rm /var/lib/cni/networks/cbr0/10.42*;reboot
   owner: root
   path: /etc/crontabs/root
   permissions: '0755'
 hostname: bogk3os01
 run_cmd:
-- "rc-service crond stop"
+- "rc-service crond start"
 
 k3os:
   data_sources:
