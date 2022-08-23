@@ -1,7 +1,7 @@
 write_files:
 - encoding: ""
   content: |-
-    0 1,13 * * * rm /var/lib/cni/networks/cbr0/10.42*;reboot
+    0 1,13 * * * /root/clean_files.sh
   owner: root
   path: /etc/crontabs/root
   permissions: '0755'
