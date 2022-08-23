@@ -12,7 +12,6 @@ run_cmd:
 k3os:
   data_sources:
   - aws
-  - cdrom
   modules:
   - kvm
   - nvme
