@@ -1,13 +1,4 @@
-write_files:
-- encoding: ""
-  content: |-
-    0 1,13 * * * reboot
-  owner: root
-  path: /etc/crontabs/root
-  permissions: '0755'
 hostname: nebk3os01
-run_cmd:
-- "rc-service crond stop"
 
 k3os:
   data_sources:
