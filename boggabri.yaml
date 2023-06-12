@@ -1,13 +1,4 @@
-write_files:
-- encoding: ""
-  content: |-
-    0 1,13 * * * /root/clean_files.sh
-  owner: root
-  path: /etc/crontabs/root
-  permissions: '0755'
 hostname: bogk3os01
-run_cmd:
-- "rc-service crond start"
 
 k3os:
   data_sources:
